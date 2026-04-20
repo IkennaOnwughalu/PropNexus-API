@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PropNexus | AI Real Estate Platform</title>
+    <meta
+        name="description"
+        content="PropNexus is an AI-powered real estate platform for agents, clients, and admins."
+    >
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@500;700;800&display=swap"
+        rel="stylesheet"
+    >
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="page-shell">
+        <header class="hero" id="home">
+            <nav class="nav">
+                <a class="brand" href="#home">
+                    <span class="brand-mark">PN</span>
+                    <span class="brand-copy">
+                        <strong>PropNexus</strong>
+                        <small>AI Real Estate Platform</small>
+                    </span>
+                </a>
+
+                <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links">
+                    Menu
+                </button>
+
+                <div class="nav-links" id="nav-links">
+                    <a href="#features">Features</a>
+                    <a href="#tools">AI Tools</a>
+                    <a href="#marketplace">Marketplace</a>
+                    <a href="#admin">Admin</a>
+                    <a href="#pricing">Pricing</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </nav>
+
+            <div class="hero-grid">
+                <section class="hero-copy">
+                    <p class="eyebrow">Built for modern agents and global property growth</p>
+                    <h1>Close deals faster with AI, listings, and a premium client marketplace.</h1>
+                    <p class="hero-text">
+                        PropNexus helps agents generate listing content, answer buyer inquiries,
+                        publish properties, and manage clients in one trustworthy platform.
+                    </p>
+
+                    <div class="hero-actions">
+                        <a class="button button-primary" href="#tools">Try the AI tools</a>
+                        <a class="button button-secondary" href="#pricing">View pricing</a>
+                    </div>
+
+                    <div class="hero-metrics">
+                        <article>
+                            <strong>3x</strong>
+                            <span>faster listing creation</span>
+                        </article>
+                        <article>
+                            <strong>98%</strong>
+                            <span>mobile-friendly workflow</span>
+                        </article>
+                        <article>
+                            <strong>24/7</strong>
+                            <span>AI-assisted client replies</span>
+                        </article>
+                    </div>
+                </section>
+
+                <aside class="hero-panel">
+                    <div class="hero-card glass">
+                        <div class="card-topline">
+                            <span>Agent Workspace</span>
+                            <span class="status-pill">Live</span>
+                        </div>
+                        <h2>Everything agents need in one cockpit.</h2>
+                        <ul class="check-list">
+                            <li>Generate listings, ad copy, and response drafts</li>
+                            <li>Upload and manage marketplace properties</li>
+                            <li>Track leads, subscriptions, and performance</li>
+                        </ul>
+                    </div>
+
+                    <div class="signal-card">
+                        <div>
+                            <span class="signal-label">This week</span>
+                            <strong>142 buyer inquiries</strong>
+                        </div>
+                        <p>Top market: Lekki, Lagos. Most requested type: 3-bedroom apartment.</p>
+                    </div>
+                </aside>
+            </div>
+        </header>
+
+        <main>
+            <section class="section" id="features">
+                <div class="section-heading">
+                    <p class="eyebrow">Platform overview</p>
+                    <h2>One system for agents, clients, and admins</h2>
+                    <p>
+                        The first release covers the AI toolkit, listing marketplace, pricing, and core admin controls,
+                        while leaving networking, chat, and video ready for future phases.
+                    </p>
+                </div>
+
+                <div class="feature-grid">
+                    <article class="panel">
+                        <span class="panel-kicker">For agents</span>
+                        <h3>AI productivity suite</h3>
+                        <p>Create listings, answer clients, and launch ad copy with ready-to-edit outputs.</p>
+                    </article>
+                    <article class="panel">
+                        <span class="panel-kicker">For clients</span>
+                        <h3>Curated property marketplace</h3>
+                        <p>Browse verified listings, filter by location and type, and connect with agents directly.</p>
+                    </article>
+                    <article class="panel">
+                        <span class="panel-kicker">For admins</span>
+                        <h3>Operational control center</h3>
+                        <p>Monitor users, subscriptions, listings, moderation actions, and platform analytics.</p>
+                    </article>
+                </div>
+            </section>
+
+            <section class="section tools-section" id="tools">
+                <div class="section-heading">
+                    <p class="eyebrow">AI tools</p>
+                    <h2>Interactive AI generation workspace</h2>
+                    <p>
+                        These demos run in the browser so you can test the product experience immediately in VS Code.
+                    </p>
+                </div>
+
+                <div class="tool-layout">
+                    <div class="tool-tabs" role="tablist" aria-label="AI tools">
+                        <button class="tool-tab is-active" type="button" data-tool="listing" role="tab" aria-selected="true">
+                            Listing Generator
+                        </button>
+                        <button class="tool-tab" type="button" data-tool="response" role="tab" aria-selected="false">
+                            Client Response
+                        </button>
+                        <button class="tool-tab" type="button" data-tool="adcopy" role="tab" aria-selected="false">
+                            Ad Copy
+                        </button>
+                    </div>
+
+                    <div class="tool-card panel">
+                        <form id="ai-form" class="tool-form">
+                            <label>
+                                Property type
+                                <input type="text" name="propertyType" value="3-bedroom duplex">
+                            </label>
+                            <label>
+                                Location
+                                <input type="text" name="location" value="Lekki Phase 1, Lagos">
+                            </label>
+                            <label>
+                                Key details
+                                <textarea name="details" rows="5">Private cinema, smart home controls, rooftop lounge, and secure parking for 3 cars.</textarea>
+                            </label>
+                            <label>
+                                Client context
+                                <textarea name="clientContext" rows="4">A buyer wants a premium family home close to schools and nightlife, with flexible viewing this weekend.</textarea>
+                            </label>
+                            <button class="button button-primary" type="submit">Generate content</button>
+                        </form>
+
+                        <div class="tool-output">
+                            <div class="output-header">
+                                <span>Generated output</span>
+                                <button id="copy-output" class="button button-ghost" type="button">Copy text</button>
+                            </div>
+                            <pre id="ai-output"></pre>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section marketplace-section" id="marketplace">
+                <div class="section-heading">
+                    <p class="eyebrow">Marketplace</p>
+                    <h2>Browse premium property opportunities</h2>
+                    <p>Search by location, budget, and property type to find the right fit for buyers, renters, and investors.</p>
+                </div>
+
+                <div class="marketplace-layout">
+                    <aside class="panel filter-panel">
+                        <h3>Search filters</h3>
+                        <label>
+                            Search term
+                            <input id="search-input" type="search" placeholder="Lekki, apartment, duplex...">
+                        </label>
+                        <label>
+                            Location
+                            <select id="location-filter">
+                                <option value="all">All locations</option>
+                            </select>
+                        </label>
+                        <label>
+                            Property type
+                            <select id="type-filter">
+                                <option value="all">All types</option>
+                            </select>
+                        </label>
+                        <label>
+                            Maximum price
+                            <input id="price-filter" type="range" min="50000" max="950000" step="50000" value="950000">
+                            <span id="price-label">$950,000</span>
+                        </label>
+                    </aside>
+
+                    <div class="listing-stack">
+                        <div class="marketplace-summary">
+                            <strong id="listing-count">0 properties</strong>
+                            <span>Verified listings published by PropNexus agents</span>
+                        </div>
+                        <div id="listing-grid" class="listing-grid"></div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section dashboard-section">
+                <div class="section-heading">
+                    <p class="eyebrow">Role-based workflows</p>
+                    <h2>Different experiences for every user role</h2>
+                    <p>Explore the agent, client, and admin views that shape the full product journey.</p>
+                </div>
+
+                <div class="dashboard-grid">
+                    <article class="panel">
+                        <span class="panel-kicker">Agent dashboard</span>
+                        <h3>Manage listings and leads</h3>
+                        <ul class="mini-list">
+                            <li>Draft new listings with AI-assisted content</li>
+                            <li>Track inquiries, viewing requests, and subscription tier</li>
+                            <li>Review performance by property and campaign</li>
+                        </ul>
+                    </article>
+                    <article class="panel">
+                        <span class="panel-kicker">Client experience</span>
+                        <h3>Fast property discovery</h3>
+                        <ul class="mini-list">
+                            <li>Filter by city, type, and budget</li>
+                            <li>Open detailed property cards and contact the agent</li>
+                            <li>Save time with clear descriptions and trust signals</li>
+                        </ul>
+                    </article>
+                    <article class="panel" id="admin">
+                        <span class="panel-kicker">Admin center</span>
+                        <h3>Platform analytics and control</h3>
+                        <div class="stats-grid">
+                            <div>
+                                <strong>1,284</strong>
+                                <span>total users</span>
+                            </div>
+                            <div>
+                                <strong>426</strong>
+                                <span>active agents</span>
+                            </div>
+                            <div>
+                                <strong>$48.2k</strong>
+                                <span>monthly revenue</span>
+                            </div>
+                            <div>
+                                <strong>17</strong>
+                                <span>flagged listings</span>
+                            </div>
+                        </div>
+                        <div class="admin-queue">
+                            <h4>Moderation queue</h4>
+                            <ul class="mini-list" id="moderation-list"></ul>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <section class="section phase-section">
+                <div class="section-heading">
+                    <p class="eyebrow">Growth roadmap</p>
+                    <h2>Built for phased expansion</h2>
+                </div>
+
+                <div class="timeline">
+                    <article class="panel timeline-item">
+                        <span class="timeline-step">Phase 1</span>
+                        <h3>AI SaaS foundation</h3>
+                        <p>Landing page, pricing, AI content tools, email/password auth, subscriptions.</p>
+                    </article>
+                    <article class="panel timeline-item">
+                        <span class="timeline-step">Phase 2</span>
+                        <h3>Marketplace operations</h3>
+                        <p>Agent uploads, listing management, buyer search, contact workflows, admin moderation.</p>
+                    </article>
+                    <article class="panel timeline-item">
+                        <span class="timeline-step">Phase 3</span>
+                        <h3>Networking and referrals</h3>
+                        <p>Agent profiles, direct messaging, group collaboration, video rooms, and deal referrals.</p>
+                    </article>
+                </div>
+            </section>
+
+            <section class="section pricing-section" id="pricing">
+                <div class="section-heading">
+                    <p class="eyebrow">Pricing</p>
+                    <h2>Plans for solo agents and growing brokerages</h2>
+                    <p>Supports monthly and yearly subscriptions, with future Stripe and Paystack integrations.</p>
+                </div>
+
+                <div class="pricing-grid">
+                    <article class="panel pricing-card">
+                        <span class="panel-kicker">Starter</span>
+                        <h3>$19<span>/month</span></h3>
+                        <ul class="mini-list">
+                            <li>50 AI generations per month</li>
+                            <li>Up to 10 active listings</li>
+                            <li>Email support</li>
+                        </ul>
+                        <a class="button button-secondary" href="#contact">Start free trial</a>
+                    </article>
+                    <article class="panel pricing-card featured-card">
+                        <span class="panel-kicker">Professional</span>
+                        <h3>$59<span>/month</span></h3>
+                        <ul class="mini-list">
+                            <li>Unlimited AI generations</li>
+                            <li>Unlimited listings and marketplace priority</li>
+                            <li>Performance analytics and moderation support</li>
+                        </ul>
+                        <a class="button button-primary" href="#contact">Choose professional</a>
+                    </article>
+                    <article class="panel pricing-card">
+                        <span class="panel-kicker">Brokerage</span>
+                        <h3>$149<span>/month</span></h3>
+                        <ul class="mini-list">
+                            <li>Team seats and shared analytics</li>
+                            <li>Admin workflows and listing approvals</li>
+                            <li>Priority onboarding and custom support</li>
+                        </ul>
+                        <a class="button button-secondary" href="#contact">Talk to sales</a>
+                    </article>
+                </div>
+            </section>
+
+            <section class="section contact-section" id="contact">
+                <div class="contact-card">
+                    <div>
+                        <p class="eyebrow">Ready to launch</p>
+                        <h2>Bring agents, clients, and listings into one polished platform.</h2>
+                        <p>Use this prototype as the starting point for a full-stack PropNexus product in VS Code.</p>
+                    </div>
+                    <form class="contact-form">
+                        <label>
+                            Name
+                            <input type="text" placeholder="Your name">
+                        </label>
+                        <label>
+                            Email
+                            <input type="email" placeholder="name@example.com">
+                        </label>
+                        <label>
+                            Message
+                            <textarea rows="4" placeholder="Tell us about your team or market."></textarea>
+                        </label>
+                        <button class="button button-primary" type="button">Request a demo</button>
+                    </form>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
